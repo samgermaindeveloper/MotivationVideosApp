@@ -15,6 +15,13 @@
 		2202349223495F35000948F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2202349123495F35000948F9 /* main.m */; };
 		2202349C23495F35000948F9 /* VideoTutorialsWithServerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2202349B23495F35000948F9 /* VideoTutorialsWithServerAppTests.m */; };
 		220234A723495F35000948F9 /* VideoTutorialsWithServerAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 220234A623495F35000948F9 /* VideoTutorialsWithServerAppUITests.m */; };
+		220234B6234A8175000948F9 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 220234B5234A8175000948F9 /* HTTPService.m */; };
+		220234BD234AB980000948F9 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 220234BC234AB980000948F9 /* VideoCell.m */; };
+		220234C4234AC269000948F9 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 220234C3234AC269000948F9 /* Video.m */; };
+		220234C9234AE8A9000948F9 /* VideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 220234C8234AE8A9000948F9 /* VideoVC.m */; };
+		220234CC234AFE87000948F9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220234CB234AFE87000948F9 /* WebKit.framework */; };
+		220234CF234B2CBB000948F9 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 220234CE234B2CBB000948F9 /* Comment.m */; };
+		220234D6234B2F30000948F9 /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 220234D5234B2F30000948F9 /* CommentCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,19 @@
 		220234A223495F35000948F9 /* VideoTutorialsWithServerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoTutorialsWithServerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		220234A623495F35000948F9 /* VideoTutorialsWithServerAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoTutorialsWithServerAppUITests.m; sourceTree = "<group>"; };
 		220234A823495F35000948F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220234B4234A8175000948F9 /* HTTPService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
+		220234B5234A8175000948F9 /* HTTPService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
+		220234BB234AB980000948F9 /* VideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		220234BC234AB980000948F9 /* VideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		220234C2234AC268000948F9 /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		220234C3234AC269000948F9 /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		220234C7234AE8A9000948F9 /* VideoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoVC.h; sourceTree = "<group>"; };
+		220234C8234AE8A9000948F9 /* VideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoVC.m; sourceTree = "<group>"; };
+		220234CB234AFE87000948F9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		220234CD234B2CBB000948F9 /* Comment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		220234CE234B2CBB000948F9 /* Comment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		220234D4234B2F30000948F9 /* CommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
+		220234D5234B2F30000948F9 /* CommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220234CC234AFE87000948F9 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +106,7 @@
 				2202349A23495F35000948F9 /* VideoTutorialsWithServerAppTests */,
 				220234A523495F35000948F9 /* VideoTutorialsWithServerAppUITests */,
 				2202348023495F33000948F9 /* Products */,
+				220234CA234AFE86000948F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +123,17 @@
 		2202348123495F33000948F9 /* VideoTutorialsWithServerApp */ = {
 			isa = PBXGroup;
 			children = (
+				220234C6234AE87B000948F9 /* Controller */,
+				220234C1234AC23E000948F9 /* Model */,
+				220234B7234A8182000948F9 /* Services */,
+				2202349123495F35000948F9 /* main.m */,
+				220234D0234B2EAE000948F9 /* TableCells */,
 				2202348223495F33000948F9 /* AppDelegate.h */,
 				2202348323495F33000948F9 /* AppDelegate.m */,
-				2202348523495F33000948F9 /* ViewController.h */,
-				2202348623495F33000948F9 /* ViewController.m */,
 				2202348823495F33000948F9 /* Main.storyboard */,
 				2202348B23495F35000948F9 /* Assets.xcassets */,
 				2202348D23495F35000948F9 /* LaunchScreen.storyboard */,
 				2202349023495F35000948F9 /* Info.plist */,
-				2202349123495F35000948F9 /* main.m */,
 			);
 			path = VideoTutorialsWithServerApp;
 			sourceTree = "<group>";
@@ -130,6 +154,57 @@
 				220234A823495F35000948F9 /* Info.plist */,
 			);
 			path = VideoTutorialsWithServerAppUITests;
+			sourceTree = "<group>";
+		};
+		220234B7234A8182000948F9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				220234B4234A8175000948F9 /* HTTPService.h */,
+				220234B5234A8175000948F9 /* HTTPService.m */,
+			);
+			name = Services;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		220234C1234AC23E000948F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				220234C2234AC268000948F9 /* Video.h */,
+				220234C3234AC269000948F9 /* Video.m */,
+				220234CD234B2CBB000948F9 /* Comment.h */,
+				220234CE234B2CBB000948F9 /* Comment.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		220234C6234AE87B000948F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2202348523495F33000948F9 /* ViewController.h */,
+				2202348623495F33000948F9 /* ViewController.m */,
+				220234C7234AE8A9000948F9 /* VideoVC.h */,
+				220234C8234AE8A9000948F9 /* VideoVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		220234CA234AFE86000948F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				220234CB234AFE87000948F9 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		220234D0234B2EAE000948F9 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				220234BB234AB980000948F9 /* VideoCell.h */,
+				220234BC234AB980000948F9 /* VideoCell.m */,
+				220234D4234B2F30000948F9 /* CommentCell.h */,
+				220234D5234B2F30000948F9 /* CommentCell.m */,
+			);
+			path = TableCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +338,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2202348723495F33000948F9 /* ViewController.m in Sources */,
+				220234D6234B2F30000948F9 /* CommentCell.m in Sources */,
+				220234BD234AB980000948F9 /* VideoCell.m in Sources */,
+				220234B6234A8175000948F9 /* HTTPService.m in Sources */,
+				220234C4234AC269000948F9 /* Video.m in Sources */,
+				220234C9234AE8A9000948F9 /* VideoVC.m in Sources */,
 				2202349223495F35000948F9 /* main.m in Sources */,
 				2202348423495F33000948F9 /* AppDelegate.m in Sources */,
+				220234CF234B2CBB000948F9 /* Comment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
