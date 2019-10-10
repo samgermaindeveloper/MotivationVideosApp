@@ -210,24 +210,24 @@
                                                     <constraint firstAttribute="bottom" secondItem="m4y-9G-vs9" secondAttribute="bottom" id="za8-NG-139"/>
                                                 </constraints>
                                             </view>
-                                            <tableView contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsVerticalScrollIndicator="NO" canCancelContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yhb-xl-JzN" customClass="MyOwnTableView">
-                                                <rect key="frame" x="0.0" y="392.5" width="359" height="407.5"/>
+                                            <tableView contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsVerticalScrollIndicator="NO" canCancelContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yhb-xl-JzN" customClass="MyOwnTableView">
+                                                <rect key="frame" x="0.0" y="393" width="359" height="245"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell autoresizesSubviews="NO" contentMode="scaleAspectFit" restorationIdentifier="comm" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="comm" rowHeight="296" id="ica-d3-U2u" customClass="CommentCell">
-                                                        <rect key="frame" x="0.0" y="28" width="359" height="296"/>
+                                                    <tableViewCell autoresizesSubviews="NO" contentMode="scaleAspectFit" restorationIdentifier="comm" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="comm" rowHeight="89" id="ica-d3-U2u" customClass="CommentCell">
+                                                        <rect key="frame" x="0.0" y="28" width="359" height="89"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ica-d3-U2u" id="31P-qC-3ae">
-                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="296"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="89"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YLx-tx-7f0" userLabel="CellContent">
                                                                     <rect key="frame" x="0.0" y="0.0" width="359" height="60"/>
                                                                     <subviews>
-                                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l83-5D-W48" userLabel="Name Container View">
+                                                                        <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l83-5D-W48" userLabel="Name Container View">
                                                                             <rect key="frame" x="0.0" y="0.0" width="359" height="27"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sac-mO-1BW">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sac-mO-1BW">
                                                                                     <rect key="frame" x="20" y="3" width="45" height="21"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <nil key="textColor"/>
@@ -242,8 +242,8 @@
                                                                                 <constraint firstItem="sac-mO-1BW" firstAttribute="top" secondItem="l83-5D-W48" secondAttribute="top" constant="3" id="gO2-Ts-RFZ"/>
                                                                             </constraints>
                                                                         </view>
-                                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uOn-c2-yGn">
-                                                                            <rect key="frame" x="0.0" y="27" width="359" height="261"/>
+                                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uOn-c2-yGn">
+                                                                            <rect key="frame" x="0.0" y="27" width="359" height="136"/>
                                                                             <color key="backgroundColor" red="0.87695074117194738" green="1" blue="0.99926858469270596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -295,7 +295,7 @@
                                             <constraint firstAttribute="trailing" secondItem="xZc-IY-NZb" secondAttribute="trailing" id="3Bn-pO-xpi"/>
                                             <constraint firstItem="xZc-IY-NZb" firstAttribute="width" secondItem="7v0-qb-ZAX" secondAttribute="width" id="Cf4-hg-wJt"/>
                                             <constraint firstItem="jEs-aW-BtH" firstAttribute="leading" secondItem="xZc-IY-NZb" secondAttribute="leading" id="Doc-VE-XXQ"/>
-                                            <constraint firstAttribute="bottom" secondItem="Yhb-xl-JzN" secondAttribute="bottom" id="I1Y-fo-Lnv"/>
+                                            <constraint firstAttribute="bottom" secondItem="Yhb-xl-JzN" secondAttribute="bottom" constant="50" id="I1Y-fo-Lnv"/>
                                             <constraint firstItem="xZc-IY-NZb" firstAttribute="leading" secondItem="7v0-qb-ZAX" secondAttribute="leading" id="KLl-hM-6lE"/>
                                             <constraint firstItem="UhI-8q-qRY" firstAttribute="trailing" secondItem="xZc-IY-NZb" secondAttribute="trailing" id="KmA-iJ-Gml"/>
                                             <constraint firstItem="UNU-Ll-4f9" firstAttribute="leading" secondItem="xZc-IY-NZb" secondAttribute="leading" id="L2J-Bb-TNa"/>
