@@ -82,6 +82,9 @@ NSString *textViewDefaultName = @"Name";
 -(void) updateTableData {
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.comments reloadData];
+        //CGRect frame = self.comments.frame;
+        //frame.size.height = self.comments.contentSize.height;
+        //self.comments.frame = frame;
     });
 }
 

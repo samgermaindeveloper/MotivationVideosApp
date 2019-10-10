@@ -22,6 +22,7 @@
 		220234CC234AFE87000948F9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220234CB234AFE87000948F9 /* WebKit.framework */; };
 		220234CF234B2CBB000948F9 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 220234CE234B2CBB000948F9 /* Comment.m */; };
 		220234D6234B2F30000948F9 /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 220234D5234B2F30000948F9 /* CommentCell.m */; };
+		22253E07234F5CC9007979B8 /* MyOwnTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22253E06234F5CC9007979B8 /* MyOwnTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		220234CE234B2CBB000948F9 /* Comment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		220234D4234B2F30000948F9 /* CommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
 		220234D5234B2F30000948F9 /* CommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
+		22253E05234F5CC9007979B8 /* MyOwnTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOwnTableView.h; sourceTree = "<group>"; };
+		22253E06234F5CC9007979B8 /* MyOwnTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOwnTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				2202348B23495F35000948F9 /* Assets.xcassets */,
 				2202348D23495F35000948F9 /* LaunchScreen.storyboard */,
 				2202349023495F35000948F9 /* Info.plist */,
+				22253E05234F5CC9007979B8 /* MyOwnTableView.h */,
+				22253E06234F5CC9007979B8 /* MyOwnTableView.m */,
 			);
 			path = VideoTutorialsWithServerApp;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 				220234C9234AE8A9000948F9 /* VideoVC.m in Sources */,
 				2202349223495F35000948F9 /* main.m in Sources */,
 				2202348423495F33000948F9 /* AppDelegate.m in Sources */,
+				22253E07234F5CC9007979B8 /* MyOwnTableView.m in Sources */,
 				220234CF234B2CBB000948F9 /* Comment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
