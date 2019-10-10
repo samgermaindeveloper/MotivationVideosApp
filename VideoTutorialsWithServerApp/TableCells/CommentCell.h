@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /* Assign the title and text of the comment cell */
 -(void)updateUI:(nonnull Comment*)comment;
-
 @end
 
 NS_ASSUME_NONNULL_END

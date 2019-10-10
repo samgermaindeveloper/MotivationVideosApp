@@ -20,7 +20,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *enterCommentName;
 @property (weak, nonatomic) IBOutlet UITableView *comments;
 
-@property(strong, nonatomic) NSArray* commentList;
+@property(strong, nonatomic) NSMutableArray* commentList;
 @end
 
 /*
@@ -43,7 +43,7 @@ NSString *textViewDefaultName = @"Name";
                 Comment *com = [[Comment alloc]init];
                 com.name = [d objectForKey:@"user"];
                 com.comment = [d objectForKey:@"comment"];
-                [arr addObject:com];
+                [arr insertObject:com atIndex:0];
             }
             
             self.commentList = arr;
@@ -62,6 +62,11 @@ NSString *textViewDefaultName = @"Name";
 - (IBAction)postButton:(id)sender {
     NSString *url = [NSString stringWithFormat:@"%s%@", "/comments/", self.video.identifier];
     [[HTTPService instance] postWithUrlPath:url name:self.enterCommentName.text comment:self.enterCommentView.text];
+    Comment *comm = [[Comment alloc]init];
+    comm.name = self.enterCommentName.text;
+    comm.comment = self.enterCommentView.text;
+    [self.commentList insertObject:comm atIndex:0];
+    [self updateTableData];
 }
 
 

@@ -16,10 +16,6 @@
     return self.contentSize;
 }
 
-//-(void) setContentSize:(CGSize)size{
-//    [self invalidateIntrinsicContentSize];
-//}
-
 -(void) reloadData {
     [super reloadData];
     [self invalidateIntrinsicContentSize];
