@@ -56,6 +56,14 @@ NSString *textViewDefaultName = @"Name";
     self.videoTitle.text = self.video.title;
     self.textView.text = self.video.desc;
     [self.webView loadHTMLString:self.video.iframe baseURL:nil];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
+}
+
+-(void)dismissKeyboard
+{
+    [_enterCommentName resignFirstResponder];
+    [_enterCommentView resignFirstResponder];
 }
 
 -(bool) improperComment:(Comment*) comm{
