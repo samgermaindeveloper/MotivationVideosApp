@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VideoVC : UIViewController <WKNavigationDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface VideoVC : UIViewController <WKNavigationDelegate, UITableViewDelegate, UITableViewDataSource, UITextViewDelegate, UITextFieldDelegate>
 @property (nonatomic,strong) Video *video;
 @end
 

@@ -28,6 +28,9 @@
  */
 @implementation VideoVC
 
+NSString *textViewDefaultText = @"Leave a comment";
+NSString *textViewDefaultName = @"Name";
+
 -(void) viewDidLoad{
     [super viewDidLoad];
     NSString *url = [NSString stringWithFormat:@"%s%@", "/comments/", self.video.identifier];
@@ -107,6 +110,30 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.commentList.count;
+}
+
+- (void) textFieldDidBeginEditing:(UITextField *)textField {
+    if ([textField.text isEqualToString:textViewDefaultName]){
+        textField.text = @"";
+    }
+}
+
+- (void) textFieldDidEndEditing:(UITextField *)textField {
+    if ([textField.text isEqualToString:@""]){
+        textField.text = textViewDefaultName;
+    }
+}
+
+- (void) textViewDidBeginEditing:(UITextView *) textView {
+    if ([textView.text isEqualToString:textViewDefaultText]){
+        textView.text = @"";
+    }
+}
+
+- (void) textViewDidEndEditing:(UITextView *) textView {
+    if ([textView.text isEqualToString:@""]){
+        textView.text = textViewDefaultText;
+    }
 }
 
 @end
