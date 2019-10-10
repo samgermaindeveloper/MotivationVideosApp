@@ -58,15 +58,38 @@ NSString *textViewDefaultName = @"Name";
     [self.webView loadHTMLString:self.video.iframe baseURL:nil];
 }
 
+-(bool) improperComment:(Comment*) comm{
+    if ([comm.name isEqualToString:textViewDefaultName] || [comm.comment isEqualToString:textViewDefaultText] || [comm.name isEqualToString:@""] || [comm.comment isEqualToString:@""]){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 /* Posts a comment to a video */
 - (IBAction)postButton:(id)sender {
-    NSString *url = [NSString stringWithFormat:@"%s%@", "/comments/", self.video.identifier];
-    [[HTTPService instance] postWithUrlPath:url name:self.enterCommentName.text comment:self.enterCommentView.text];
     Comment *comm = [[Comment alloc]init];
     comm.name = self.enterCommentName.text;
     comm.comment = self.enterCommentView.text;
-    [self.commentList insertObject:comm atIndex:0];
-    [self updateTableData];
+    if ([self improperComment:comm]){
+        UIAlertController * alert = [UIAlertController
+                                     alertControllerWithTitle:@"Missing Field"
+                                     message:@"You must enter your name and a comment"
+                                     preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* ok = [UIAlertAction
+                                   actionWithTitle:@"OK"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {
+                                       //Handle no, thanks button
+                                   }];
+        [alert addAction:ok];
+        [self presentViewController:alert animated:YES completion:nil];
+    }else{
+        NSString *url = [NSString stringWithFormat:@"%s%@", "/comments/", self.video.identifier];
+        [[HTTPService instance] postWithUrlPath:url name:self.enterCommentName.text comment:self.enterCommentView.text];
+        [self.commentList insertObject:comm atIndex:0];
+        [self updateTableData];
+    }
 }
 
 
